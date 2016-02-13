@@ -45,6 +45,7 @@ public class ShoeFX extends Application {
    
     @Override
     public void start(Stage primaryStage){
+        
         this.primaryStage = primaryStage;
         try{
             FXMLLoader loader = new FXMLLoader();
@@ -53,6 +54,7 @@ public class ShoeFX extends Application {
             
             LoginDialogController loginController = loader.getController();
             loginController.setStage(primaryStage);
+            loginController.setShoeFX(this);
             
             Scene scene = new Scene(loginAnchorPane);
             primaryStage.setScene(scene);

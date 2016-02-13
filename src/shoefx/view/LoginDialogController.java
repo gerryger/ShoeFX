@@ -18,6 +18,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import shoefx.CSSExample;
 import shoefx.ShoeFX;
+import shoefx.ShoeFXMain;
 
 /**
  *
@@ -60,7 +61,7 @@ public class LoginDialogController {
         if(txtUsername.getText().equals("admin") && txtPassword.getText().equals("admin")){
             try {
                 this.dialogStage.close();
-                CSSExample cssexam = new CSSExample();
+                ShoeFXMain cssexam = new ShoeFXMain();
                     dialogStage.close();
                     cssexam.start(dialogStage);
                     //cssexam.greeting = "Gerry";
